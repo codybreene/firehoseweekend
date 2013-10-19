@@ -8,7 +8,8 @@
 <%= simple_form_for @pic do |f| %>
 	<%= f.input :hour, label: 'Which Hour', placeholder: 'Enter the hour' %>
 	<%= f.input :emotion, label: 'How did you feel?', placeholder: 'excited? upset? confused?' %>
-	<%= f.input :learned, label: 'What did you learn?', placeholder: 'CSS? GitHub? Chess? Calculus?' %>
+	<%= f.input :learned, label: 'What did you learn?', placeholder: 'CSS? GitHub? Chess? Calculus?', :input_html => {rows: '3'} %>
+	<br></br>
 
 	<%= submit_tag 'Submit', :class => 'btn btn-warning btn-large' %>
 <% end %>
