@@ -4,6 +4,10 @@
 
 	<h2 class="cool-font-big text-center">Drinking from the Firehose</h2>
 	<div class="row">
+
+
+
+
 	<% @pics.each do |pic| %>
 	
 		<div class="boxy offset1 span3 cool-font-box">
@@ -22,7 +26,16 @@
 				I learned  
 					<%= pic.learned %>
 			</p>
-			
+		
+			<% if pic.user.present? %>
+			<p>
+				<b>Email:</b>
+				<%= pic.user.email %>
+			</p>
+		<% end %>
+
+
+
 
 		</div>
 
