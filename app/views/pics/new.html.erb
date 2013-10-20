@@ -12,5 +12,6 @@
 	<%= f.input :learned, label: 'What did you learn?', placeholder: 'CSS? GitHub? Chess? Calculus?', :input_html => {rows: '3'} %>
 	<br></br>
 
+	<%= link_to 'Cancel', pics_path, :class => 'btn btn-large' %>
 	<%= submit_tag 'Submit', :class => 'btn btn-warning btn-large' %>
 <% end %>
