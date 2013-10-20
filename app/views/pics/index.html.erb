@@ -3,9 +3,8 @@
 
 
 	<h2 class="cool-font-big text-center">Drinking from the Firehose</h2>
+	
 	<div class="row">
-
-
 
 
 	<% @pics.each do |pic| %>
@@ -19,11 +18,12 @@
 			</div>
 
 			<p>
-				<%= pic.emotion %>
+				Emotion: 
+					<%= pic.emotion %>
 			</p>
 
 			<p>
-				I learned  
+				I learned:  
 					<%= pic.learned %>
 			</p>
 		
@@ -33,8 +33,6 @@
 				<%= pic.user.email %>
 			</p>
 		<% end %>
-
-
 
 
 		</div>
